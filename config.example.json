@@ -1,0 +1,11 @@
+{
+    "collar_server": "ws://{IP}:{PORT}/ws_requester?key={COLLARS_KEY}",
+    "discord_token": "discord_bot_token",
+    "max_strength": 50,
+    "max_length": 5000,
+    "per_char_strength": 2,
+    "per_char_length": 200,
+    "prefix": "z",
+    "allow_anyone": false,
+    "admins": ["list", "of", "discord", "user", "IDs"]
+}
