@@ -161,7 +161,7 @@ async function generateChallenge(msg, pet_id, base_time) {
     let pet_user = null;
     if (pet_id) {
         pet_user = await discord.users.fetch(pet_id, true, true);
-        cActiveChallenge.channel = pet_user.dmChannel;
+        cActiveChallenge.channel = pet_user;
     } else {
         cActiveChallenge.channel = msg.channel;
     }
@@ -227,6 +227,7 @@ function challengeClear() {
 
 function challengeComplete() {
     cActiveChallenge.channel.send('Good ' + CONFIG.display.petnames[Math.floor(Math.random() * CONFIG.display.petnames.length)] + '! 🐺🐾');
+    console.log(colour.green('Challenge: ') + 'Complete! No zaps sent'));
     challengeClear();
 }
 
