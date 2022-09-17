@@ -81,7 +81,7 @@ discord.on('message', async (msg) => {
                 // Optional: select a pet to DM directly
                 if (params[1]) {    
                     let sanitised_id = params[1].replace('<@', '').replace('>', '');
-                    if (sanitised_id.length === 18 && sanitised_id === CONFIG.pet) {
+                    if (sanitised_id === CONFIG.pet) {
                         pet_id = params[1]
                     }
                 }
@@ -99,7 +99,7 @@ discord.on('message', async (msg) => {
                 // Select a pet to DM directly
                 if (params[1]) {    
                     let sanitised_id = params[1].replace('<@', '').replace('>', '');
-                    if (sanitised_id.length === 18 && sanitised_id === CONFIG.pet) {
+                    if (sanitised_id === CONFIG.pet) {
                         pet_id = params[1]
                     }
                 }
