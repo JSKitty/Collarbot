@@ -5,7 +5,18 @@
     "max_length": 5000,
     "per_char_strength": 2,
     "per_char_length": 200,
+    "timer_base_seconds": 10,
     "prefix": "z",
     "allow_anyone": false,
-    "admins": ["list", "of", "discord", "user", "IDs"]
+    "pet": "id_of_collar_pet",
+    "admins": ["list", "of", "discord", "user", "IDs"],
+    "display": {
+        "greetings": ["Hey", "Sup"],   
+        "petnames": ["pup", "puppy", "cutie"],
+        "pet_templates": [
+            "{}, {}, here's a puzzle, better be quick!",
+            "{}, be a good {} and finish this puzzle, or else... ⚡",
+            "{} {}, answer this... Or get a little *shock* ⚡"
+        ]
+    }
 }
