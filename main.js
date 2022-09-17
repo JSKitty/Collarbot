@@ -205,7 +205,7 @@ async function generateChallenge(msg, pet_id, base_time) {
         }
         const greeting = CONFIG.display.greetings[Math.floor(Math.random() * CONFIG.display.greetings.length)];
         const petname = CONFIG.display.petnames[Math.floor(Math.random() * CONFIG.display.petnames.length)];
-        msg.reply(generateTemplate(greeting, petname) + '\n ⏳ **What is ' + strContent + '?**');
+        cActiveChallenge.channel.send(generateTemplate(greeting, petname) + '\n ⏳ **What is ' + strContent + '?**');
     }// else if (nRandType === CHALLENGE.TEXT) {
 
     //}
