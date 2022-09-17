@@ -242,7 +242,7 @@ function challengePunishment() {
         "duration": 500 + Math.floor(Math.random() * 1000)
     }
 
-    console.log(colour.green('Challenge: ') + 'Executing zap of %s and %s', colour.yellow(nStrength + ' strength'), colour.yellow((nLength / 1000) + ' seconds'));
+    console.log(colour.green('Challenge: ') + 'Executing zap of %s and %s', colour.yellow(payload.level + ' strength'), colour.yellow((payload.duration / 1000) + ' seconds'));
 
     // Push payload to the Colla-rs server
     ws.send(JSON.stringify(payload));
