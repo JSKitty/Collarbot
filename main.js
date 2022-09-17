@@ -227,7 +227,7 @@ function challengeClear() {
 
 function challengeComplete() {
     cActiveChallenge.channel.send('Good ' + CONFIG.display.petnames[Math.floor(Math.random() * CONFIG.display.petnames.length)] + '! 🐺🐾');
-    console.log(colour.green('Challenge: ') + 'Complete! No zaps sent'));
+    console.log(colour.green('Challenge: ') + 'Complete! No zaps sent');
     challengeClear();
 }
 
